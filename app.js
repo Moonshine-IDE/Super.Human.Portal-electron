@@ -12,8 +12,9 @@ app.on("ready", function () {
 
   mainWindow.webContents.session.clearCache();
 
-  //ex: https://domino.moon.startcloud.com/Super.Human.Portal_Royale/js-debug/index.html
-  mainWindow.loadURL("");
+  // Nomad example:  https://nomad.myserver.com:9443/nomad
+  // Super.Human.Portal example: https://domino.demo.startcloud.com/Super.Human.Portal/js-release/index.html
+  mainWindow.loadURL("https://nomad.REPLACEME:9443/nomad");
   mainWindow.on("ready-to-show", function () {
     mainWindow.show();
     mainWindow.focus();

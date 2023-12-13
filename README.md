@@ -1,11 +1,16 @@
 # Super.Human.Portal-electron
 
+Electron wrapper for [Super.Human.Portal](https://github.com/Moonshine-IDE/Super.Human.Portal) or HCL Nomad.
+
+## Requirements
+
+* [Node JS](https://nodejs.org/en/download)
+* An HCL Nomad server.  You can create a test server with [Super.Human.Installer](https://github.com/Moonshine-IDE/Super.Human.Installer).
+
 ## Configuring, building and running application
 
-1. If you do not have a Domino server with Nomad Web 1.0.9 or later installed, then use [Super.Human.Installer](https://github.com/Moonshine-IDE/Super.Human.Installer/releases/tag/0.8.21-dev) to install a local Domino instance first. If you already have a Domino server with Nomad Web, you can skip this step.
-2. If you do not have Node.JS installed on your computer yet, download and install the LTS version from [https://nodejs.org/en/download](https://nodejs.org/en/download)
-3. Clone this GitHub repo or use the Code->Download button to store the files on your computer.
-4. Open a Terminal or command prompt and Change Directory to the location of the downloaded code in step 3
-5. In the root folder of the application, run `npm install`
-6. Provide the starting URL of your Domino server Nomad instance in app.js, line 16
-7. Run the application using `npm start`
+1. Clone this repository
+2. Open a Terminal or Command Prompt to the cloned directory
+3. Run `npm install`
+3. Open `app.js` and populate `mainWindow.loadURL` (line 17) with your base Nomad or Super.Human.Portal URL.
+4. Launch the application with: `npm start`
